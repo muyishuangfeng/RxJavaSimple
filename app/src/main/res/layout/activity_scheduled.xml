@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yk.rxjava.wigedit.activity.ScheduledActivity">
+
+
+    <Button
+        android:id="@+id/btn_timer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="timer" />
+
+    <Button
+        android:id="@+id/btn_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="interval"
+        app:layout_constraintTop_toBottomOf="@+id/btn_timer" />
+
+    <Button
+        android:id="@+id/btn_interval_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="interval_submit"
+        app:layout_constraintTop_toBottomOf="@+id/btn_interval" />
+
+    <Button
+        android:id="@+id/btn_delay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delay"
+        app:layout_constraintTop_toBottomOf="@+id/btn_interval_submit" />
+    <Button
+        android:id="@+id/btn_interval_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="每隔一秒执行一次任务，执行五次"
+        app:layout_constraintTop_toBottomOf="@+id/btn_delay" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        app:layout_constraintTop_toBottomOf="@+id/btn_interval_five" />
+</android.support.constraint.ConstraintLayout>
