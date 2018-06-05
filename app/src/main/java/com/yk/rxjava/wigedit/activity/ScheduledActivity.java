@@ -1,5 +1,6 @@
 package com.yk.rxjava.wigedit.activity;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -67,7 +68,8 @@ public class ScheduledActivity extends AppCompatActivity {
         mBtnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(ScheduledActivity.this,
+                        RotatingActivity.class));
             }
         });
         mBtnIntervalFive = findViewById(R.id.btn_interval_five);

@@ -6,6 +6,7 @@ import com.yk.rxjava.model.LoginRequest;
 import com.yk.rxjava.model.NewsBean;
 import com.yk.rxjava.model.RegisterRequest;
 import com.yk.rxjava.model.RegisterResponse;
+import com.yk.rxjava.model.WeatherBean;
 
 import io.reactivex.Observable;
 import retrofit2.http.Body;
@@ -24,4 +25,8 @@ public interface Api {
     @GET("api/data/{category}/{count}/{page}")
     Observable<NewsBean> getNews(@Path("category") String category, @Path("count") int count,
                                  @Path("page") int page);
+
+
+    @GET("adat/sk/{cityId}.html")
+    Observable<WeatherBean> getWeather(@Path("cityId") long cityId);
 }
